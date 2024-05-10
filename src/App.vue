@@ -27,10 +27,10 @@ const menu: { id: number; icon: IconName; label: string; type?: IconType }[] = [
   <div>
     <p>Loop Usage</p>
     <IconAsync
-      v-for="(item, index) in menu"
+      v-for="item in menu"
       :name="item.icon"
       :type="item.type"
-      :key="index"
+      :key="item.id"
       class="w-6 h-6 text-blue-500"
     />
   </div>
